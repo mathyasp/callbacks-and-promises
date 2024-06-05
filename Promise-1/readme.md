@@ -2,6 +2,8 @@
 
 A Promise is an Object that represents work that will done in the future. This is similar to a callback. In fact a Promise makes use of callbacks!
 
+Read about Promise here: https://javascript.info/promise-basics
+
 A Promise can be in one of three states: 
 
 - **pending** - in process
