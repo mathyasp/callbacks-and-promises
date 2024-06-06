@@ -36,10 +36,17 @@ greet('Your name') // Returns a Promise
   .catch(err => console.log(err)) // Catches an error
 
 // Challenges: get greet() to fail by passing a non string value
-// What happens? 
+// What happens? The console prints an error message saying "Greet expects a string!"
+greet(5)
+.then(str => console.log(str))
+.catch(err => console.log(err))
 
 // Challenge: get uppercaser() to fail by passing a non string value
-// What happens? 
+// What happens? The console prints an error message saying "Argument to uppercaser must be string"
+uppercaser(5)
+.then(str => console.log(str))
+.catch(err => console.log(err))
 
 // Challenge: Notice there is only a single .catch() at the end. 
 // Explain the behavior?
+// A single .catch() will handle any errors because errors in a Promise chain will "bubble up" to the nearest error handler
