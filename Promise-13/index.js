@@ -36,9 +36,10 @@ const p = fetchTodos()
 // Challenges 
 
 // Run the code and observe what happens. 
+// "Hello World" is logged to the console twice.
 
 // Uncomment line 15. This activates the catch block. What happens? 
-
+// "Hello World" is logged to the console once, and the error is logged to the console once.
 
 
 
