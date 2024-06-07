@@ -38,7 +38,17 @@ fetch('https://jsonplaceholder.typicode.com/todos/1')
 // Test the code above. The API should return an object something like: 
 // { userId: 1, id: 1, title: 'delectus aut autem', completed: false }
 
+fetch('https://jsonplaceholder.typicode.com/todos/1')
+  .then(response => response.json())
+  .then(data => console.log(data))
+  .catch(error => console.error('Error fetching data:', error));
+
 // Simulate an error by changin the URL above to: 
 // https://jsonplaceholder.typicode.com/
+
+fetch('https://jsonplaceholder.typicode.com/')
+  .then(response => response.json())
+  .then(data => console.log(data))
+  .catch(error => console.error('Error fetching data:', error));
 
 // This should cause the code in the catch() block to run. Test this! 
