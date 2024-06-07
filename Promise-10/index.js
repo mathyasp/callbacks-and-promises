@@ -25,7 +25,7 @@ Promise.any([lion, hare, tortise]).then(result => {
 // Challenge!
 
 // Test the code above. Explain what happens below:
-
+// The tortise wins because it resolves first, while the others are all rejected. It seems that .any() only resolves if at least one promise resolves.
 
 // Notice this example is the same as the last with the difference
 // that this time you are using Promise.any() instead of Promise.race()
