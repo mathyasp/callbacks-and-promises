@@ -6,10 +6,16 @@ async function fetchTodos() {
 
 const p = fetchTodos()
 
+p.then(result => {
+  console.log(result)
+}).catch(err => {
+  console.error(err)
+});
+
 // Challenges 
 
 // Run the code. What is returned on line 7? 
-
+// A Promise object is returned that is unresolved.
 
 // The code above is a previous example. Notice that we are using the await 
 // keyword to resolve the response/Promise returned from fetch(). This 
